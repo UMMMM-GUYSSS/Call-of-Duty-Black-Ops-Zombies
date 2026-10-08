@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-map="zombie_temple">
+<head>
+  <meta charset="utf-8">
+  <!-- integ12: served at /five/ or /kino/ (vel.gg root routing): resolve relative URLs (and maps.js BASE) from the site directory. -->
+  <script>if (/\/(five|kino|shangrila)\/$/.test(location.pathname)) document.write('<base href="../">');</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#000000">
+  <title>Shangri-La</title>
+  <!-- linkcard: link preview (index.html); mkpages.mjs swaps the map name into og:title. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BO1 Zombies">
+  <meta property="og:title" content="Shangri-La | BO1 Zombies">
+  <meta property="og:description" content="Black Ops zombies in your browser.">
+  <meta property="og:image" content="https://vel.gg/bo1z/art/og-mapselect.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:,">
+  <link rel="preload" as="image" href="art/loadscreen_zombie_temple.webp">
+  <link rel="stylesheet" href="play.css">
+  <style>:root { --art: url(art/loadscreen_zombie_temple.webp); }</style>
+</head>
+<body data-screen="landing">
+  <!-- The canvas carries the map loadscreen art until the engine draws its own loading screen. -->
+  <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Shangri-La"></canvas>
+  <main id="overlay">
+    <div class="prompt">
+      <p id="status" role="status" aria-live="polite"></p>
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+      <details id="error-debug" hidden><summary>Details</summary><pre id="error-debug-message"></pre></details>
+      <p id="notice" class="notice" hidden></p>
+      <div class="actions">
+        <button id="play" class="option" disabled>Loading</button>
+        <button id="secondary" class="option" hidden>Try again</button>
+      </div>
+      <p id="details"></p>
+    </div>
+    <div id="transfer" class="loadbar" hidden>
+      <p id="transfer-details" class="metrics"></p>
+      <progress id="progress" max="1" aria-label="Download progress"></progress>
+    </div>
+    <div id="loading" class="loadbar" hidden>
+      <p id="load-details" class="metrics"></p>
+      <progress id="load-progress" max="1" aria-label="Loading"></progress>
+    </div>
+    <details id="settings">
+      <summary>Options</summary>
+      <div class="settings-body">
+        <label for="sensitivity">Mouse Sensitivity <output id="sensitivity-value">5.0</output></label>
+        <input id="sensitivity" type="range" min="0.5" max="15" step="0.5" value="5">
+        <label for="volume">Master Volume <output id="volume-value">80%</output></label>
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="0.5">
+        <label class="check"><input id="fullscreen" type="checkbox"> Fullscreen</label>
+        <p id="settings-note"></p>
+      </div>
+    </details>
+  </main>
+  <aside id="background" role="status" hidden><span id="background-label"></span><progress id="background-progress" max="1" aria-label="Music and voices download"></progress><button id="background-retry" class="option" hidden>Retry</button></aside>
+  <p id="resume-hint" class="resume-hint" hidden>Click to resume</p>
+  <script type="module" src="play.js"></script>
+
+</body>
+</html>

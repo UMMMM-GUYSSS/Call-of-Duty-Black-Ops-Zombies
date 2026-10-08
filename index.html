@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/bo1z/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#000000">
+  <title>Zombies</title>
+  <!-- linkcard: link previews (Discord, iMessage, X...) need absolute URLs; art/og-mapselect.png is this landing composed
+       from its own art (all rows, Kino focused, 1280x720). Map pages carry the same card (five.html, mkpages.mjs). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BO1 Zombies">
+  <meta property="og:title" content="BO1 Zombies">
+  <meta property="og:description" content="Black Ops zombies in your browser: Kino der Toten, Five, Der Riese, Nacht der Untoten, Verrückt, Shi No Numa, Ascension, Call of the Dead, Shangri-La and Moon.">
+  <meta property="og:url" content="https://vel.gg/bo1z">
+  <meta property="og:image" content="https://vel.gg/bo1z/art/og-mapselect.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:,">
+  <!-- Landing: the game's own solo zombies map-select screen (native 1920x1080 capture, tools/web/mapselect), with only the
+       maps this site runs listed (mksupported.py). Only these images load here: no manifest, pack or engine file until a map
+       is picked. The list, hotspots and hover art come from ENTRIES in landing.js (row strips + the focused map's panel),
+       plus the HORDE MODE toggle below the list. -->
+  <link rel="preload" as="image" href="art/mapselect-hl-kino.webp" data-landing>
+  <link rel="preload" as="image" href="art/mapselect-panel-five.webp" data-landing>
+  <style data-landing>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    .stage { position: absolute; inset: 0; margin: auto; width: min(100vw, calc(100vh * 16 / 9)); height: min(100vh, calc(100vw * 9 / 16)); }
+    .stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+    .stage img.row { left: var(--x); top: var(--y); width: var(--w); height: var(--h); z-index: 1; }
+    .stage .focus { position: absolute; inset: 0; visibility: hidden; z-index: 2; pointer-events: none; }
+    .stage .focus.selected { visibility: visible; } /* landing.js: the last hovered/focused row stays selected, as in the game */
+    .stage a { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); outline: none; cursor: pointer; z-index: 3; }
+    body.picked, body.picked a, body.picked button { cursor: progress; }
+    /* hordetoggle (landing.js): HORDE MODE: OFF/ON, unfocused band; the focused (white) band on hover or keyboard focus */
+    .stage #horde-toggle { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); margin: 0; padding: 0;
+      border: 0; background: none; cursor: pointer; z-index: 3; outline: none; }
+    .stage #horde-toggle img { left: 0; top: 0; width: 100%; height: 100%; visibility: hidden; }
+    .stage #horde-toggle[data-state=off] img.row.off, .stage #horde-toggle[data-state=on] img.row.on { visibility: visible; }
+    .stage #horde-toggle:is(:hover, :focus-visible)[data-state=off] img.hl.off,
+    .stage #horde-toggle:is(:hover, :focus-visible)[data-state=on] img.hl.on { visibility: visible; }
+    .stage #horde-toggle.unavailable { opacity: .45; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  </style>
+  <script type="module" src="landing.js"></script>
+</head>
+<body>
+  <main class="stage">
+    <img src="art/mapselect-supported.webp" alt="Zombies map selection"><!-- rows unfocused; landing.js focuses Kino, as the game opens -->
+  </main>
+
+</body>
+</html>

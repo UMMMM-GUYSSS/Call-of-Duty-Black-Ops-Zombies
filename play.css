@@ -1,0 +1,83 @@
+/* Five's own presentation: the map loadscreen (art/ is generated from the pack by tools/web/mksiteart.py),
+   white condensed caps with a black shadow, a thin load bar. The game's fonts are glyph atlases inside
+   the fastfiles, so a condensed system face stands in. */
+:root { color-scheme: dark; background: #000; color: #ebebeb;
+  font: 16px/1.4 "Bahnschrift SemiCondensed", Bahnschrift, "Arial Narrow", "Roboto Condensed", Arial, sans-serif;
+  font-stretch: condensed; --art: url(art/loadscreen_zombie_pentagon.webp); }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; min-height: 100vh; overflow: hidden; text-shadow: 0 0 4px #000, 1px 1px 1px #000; }
+#game { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%;
+  background: #000 var(--art) center / cover no-repeat; outline: none; }
+#overlay { position: fixed; inset: 0; background: #000 var(--art) center / cover no-repeat; overflow-y: auto; }
+.prompt { position: absolute; left: 0; right: 0; bottom: 17vh; text-align: center; padding: 0 6vw; }
+#status { margin: 0 0 10px; font-size: clamp(1.15rem, 2.2vw, 1.7rem); letter-spacing: .14em; text-transform: uppercase; }
+#status:empty, #details:empty { display: none; }
+#details, .metrics { margin: 8px 0 0; font-size: .78rem; letter-spacing: .08em; color: #cfcfcf; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.actions { display: flex; gap: 6px 28px; justify-content: center; flex-wrap: wrap; }
+.option { font: inherit; font-size: clamp(1rem, 1.6vw, 1.25rem); letter-spacing: .12em; text-transform: uppercase; color: #f2f2f2;
+  background: none; border: 0; padding: 6px 12px; cursor: pointer; text-shadow: inherit; }
+.option:hover, .option:focus-visible { color: #fff; outline: none; text-shadow: 0 0 8px #ff3b2b, 0 0 2px #000; }
+.option:disabled { color: #bdbdbd; cursor: wait; }
+body[data-screen=landing] #play:enabled, body[data-screen=ready] #play { animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .45; } }
+.notice { font-size: .8rem; color: #dcdcdc; margin: 0 0 8px; }
+.error-message { max-width: 640px; margin: 0 auto 14px; font-size: .95rem; white-space: pre-line; overflow-wrap: anywhere; }
+body[data-screen=error] .prompt { background: linear-gradient(90deg, transparent, #000d 18%, #000d 82%, transparent); padding: 22px 12vw; }
+#error-debug { font-size: .7rem; color: #aaa; margin: 0 auto 12px; max-width: 640px; }
+#error-debug summary { cursor: pointer; text-transform: uppercase; letter-spacing: .1em; }
+#error-debug-message { text-align: left; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 160px; overflow-y: auto; }
+.loadbar { position: absolute; left: 50%; bottom: 9vh; transform: translateX(-50%); width: min(56vw, 720px); text-align: center; }
+.loadbar .metrics { margin: 0 0 6px; }
+progress { display: block; appearance: none; width: 100%; height: 4px; border: 0; background: #0009; box-shadow: 0 0 0 1px #ffffff2a; }
+progress::-webkit-progress-bar { background: #0009; }
+progress::-webkit-progress-value { background: #e6e6e6; }
+progress::-moz-progress-bar { background: #e6e6e6; }
+progress:indeterminate { background: linear-gradient(90deg, #0009 30%, #e6e6e6aa 50%, #0009 70%); background-size: 200% 100%; animation: waiting 2s linear infinite; }
+@keyframes waiting { to { background-position: -200% 0; } }
+/* onebar: ONE bar for the whole wait (play.js barTick): #transfer stays in the download bar's place through the engine load;
+   the old load hairline (#loading) and the music/voices bar never show (#background only shows a pause + Retry). */
+#loading, #background progress { display: none !important; }
+body[data-screen=loading] #overlay { background: none; pointer-events: none; }
+body[data-screen=loading] #loading { left: 0; bottom: 0; transform: none; width: 100%; }
+body[data-screen=loading] #loading progress { height: 2px; box-shadow: none; }
+body[data-screen=loading] #load-details { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+body[data-screen=playing] #overlay { display: none; }
+/* webmenu: Escape opens the game's own menu; the page only shows this hint while gameplay lacks the mouse. */
+.resume-hint { position: fixed; left: 50%; bottom: 9vh; transform: translateX(-50%); margin: 0; pointer-events: none; z-index: 2;
+  font-size: clamp(.85rem, 1.3vw, 1.05rem); letter-spacing: .12em; text-transform: uppercase; color: #f2f2f2; opacity: .85; }
+#game.menu-cursor { cursor: none; }
+#settings { position: absolute; left: 4vw; top: 5vh; font-size: .85rem; width: min(320px, 88vw); }
+#settings summary { list-style: none; font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; width: fit-content; padding: 4px 0; }
+#settings summary::-webkit-details-marker { display: none; }
+#settings summary:hover { text-shadow: 0 0 8px #ff3b2b, 0 0 2px #000; }
+.settings-body { margin-top: 8px; padding: 12px 14px 4px; background: #000c; text-transform: uppercase; letter-spacing: .06em; }
+label { display: flex; justify-content: space-between; }
+input[type=range] { width: 100%; margin: 8px 0 14px; accent-color: #d8d8d8; }
+.check { justify-content: flex-start; gap: 10px; align-items: center; margin-bottom: 10px; }
+.check input { accent-color: #d8d8d8; }
+/* webmods: horde's max zombies / start round, under its checkbox (play.js hordeOptions) */
+.horde-field { align-items: center; margin: -4px 0 10px 24px; }
+.horde-field[hidden] { display: none; }
+.horde-field input { width: 5.5em; background: #111; color: #eee; border: 1px solid #555; font: inherit; padding: 2px 4px; }
+#settings-note { color: #aaa; font-size: .7rem; }
+#settings-note:empty { display: none; }
+#background { position: fixed; right: 14px; bottom: 10px; width: min(300px, calc(100% - 28px)); font-size: .65rem; letter-spacing: .06em;
+  text-transform: uppercase; color: #cfcfcf; opacity: .8; z-index: 3; text-align: right; }
+#background progress { margin-top: 4px; height: 2px; box-shadow: none; }
+#background .option { font-size: .7rem; padding: 4px 0; }
+@media (prefers-reduced-motion: reduce) { progress:indeterminate, #play { animation: none !important; } }
+@media (max-height: 560px), (max-width: 520px) { .prompt { bottom: 22vh; } #settings { top: 2vh; } }
+/* Intro cinematic behind the landing/download screens (play.js introSetup). */
+#intro { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+body.intro #overlay { background: #0006; }
+/* video2: from the start key until it ends or is skipped, the load cinematic is the whole picture, as native. It sits above
+   the engine canvas (which is also made transparent: whatever the engine presents while loading, including opaque black
+   WebGPU frames from the worker's OffscreenCanvas, cannot cover it) and the page UI is transparent above it. The
+   !important sizes override the older bridge's inline 2x2 px adoption style. */
+#overlay { z-index: 2; }
+body.cinematic #intro { inset: 0 !important; left: 0 !important; top: 0 !important; width: 100% !important; height: 100% !important;
+  opacity: 1 !important; z-index: 1 !important; }
+body.cinematic #game { opacity: 0; }
+body.cinematic:not([data-screen=landing]) #overlay { background: none; }
+#intro.finished { display: none !important; }
