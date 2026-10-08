@@ -1,0 +1,749 @@
+{
+ "schema": 1,
+ "map": "zombie_theater",
+ "version": "2bf00465b1f275401855cf0f7c9631bb59a77f91acad8736d037073d69420e16",
+ "classes": [
+  "boot",
+  "background",
+  "lazy"
+ ],
+ "total_bytes": 930829876,
+ "class_bytes": {
+  "boot": 732880963,
+  "background": 176439106,
+  "lazy": 21509807
+ },
+ "files": [
+  {
+   "path": "localization.txt",
+   "size": 2470,
+   "sha256": "a102dfb5515f8fb1707a0ead72e492385da113bc128b414747e17a580a19efc8",
+   "kind": "loose",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    780
+   ]
+  },
+  {
+   "path": "main/iw_00.iwd",
+   "size": 10920259,
+   "sha256": "b32bfd1562828385bd932c62f388de81eb97110899c444f3d08fb9ad9afbd91b",
+   "kind": "iw_00",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    98990,
+    63706
+   ]
+  },
+  {
+   "path": "main/iw_01.iwd",
+   "size": 20965168,
+   "sha256": "073a03d2dab879be5312f45b3184e41a7bc248fecc33837648d535d085b497c4",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    2731152,
+    2407908,
+    2872130
+   ]
+  },
+  {
+   "path": "main/iw_02.iwd",
+   "size": 3831282,
+   "sha256": "5a08b9d1db4c8b886b28bc30ddb62f82d064ef09ca69f5b84af816159a510b76",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    2357355
+   ]
+  },
+  {
+   "path": "main/iw_03.iwd",
+   "size": 2691202,
+   "sha256": "ba7eb0e8214fd4008cf7403620eeb2ffd8192dd4965a46166ef5af3144f32815",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    1959653
+   ]
+  },
+  {
+   "path": "main/iw_04.iwd",
+   "size": 52226390,
+   "sha256": "bba0e8d695dbe75148ae2f5f3399982c18d052c17c673098a5ec947b87ffca0a",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4558825,
+    778065,
+    424728,
+    2241201,
+    3257768,
+    3959670,
+    986829
+   ]
+  },
+  {
+   "path": "main/iw_05.iwd",
+   "size": 18078156,
+   "sha256": "cdc1c74ce32e30cbc3aad8956c2162b44fbdb92fce8daab1b245a718dca826f3",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    2893075,
+    4267995,
+    689181
+   ]
+  },
+  {
+   "path": "main/iw_06.iwd",
+   "size": 18419690,
+   "sha256": "859e41e1ed4c2bc528cc06af994940867dcc9334c623c92f4d36db84285ba3a2",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    3004754,
+    4958831,
+    909803
+   ]
+  },
+  {
+   "path": "main/iw_07.iwd",
+   "size": 10215687,
+   "sha256": "286f6c06b9571490a5933e27dd1a0e0478fb02dbabdffb4ff0806553613e43f1",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    3654957,
+    881334
+   ]
+  },
+  {
+   "path": "main/iw_08.iwd",
+   "size": 4603476,
+   "sha256": "8725519e7173e14905560d87dfb9bd03a7ebc045c4a7ecc376fea97b7b9356f6",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    2097467
+   ]
+  },
+  {
+   "path": "main/iw_09.iwd",
+   "size": 10779392,
+   "sha256": "fb9c94c4cf44767f881e6466420ed520c7b0daa353242fdad6c7472941b8c3d6",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4813200,
+    1248483
+   ]
+  },
+  {
+   "path": "main/iw_10.iwd",
+   "size": 7942832,
+   "sha256": "2588d5676c725a70eee3bd53e93f1c3042ebe62055b71aaa043cd6762af7621e",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4487728
+   ]
+  },
+  {
+   "path": "main/iw_11.iwd",
+   "size": 17001772,
+   "sha256": "dadd02d44199ce44319a8927c5654a78d98fc18c5b69b84ba4ba408db13cda0f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4670381,
+    4257259,
+    126781
+   ]
+  },
+  {
+   "path": "main/iw_12.iwd",
+   "size": 13974476,
+   "sha256": "bf34b6c73f775193cb7403d96669e0fc12e62bfaa93c5df406baaebb8ab50ff9",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4894811,
+    4023588
+   ]
+  },
+  {
+   "path": "main/iw_13.iwd",
+   "size": 5828576,
+   "sha256": "71e748fb9e7cb5ce5913c2da4b981adee388a5c397f6eae78f2d9b3d01f8813b",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    4303102
+   ]
+  },
+  {
+   "path": "main/iw_14.iwd",
+   "size": 11805924,
+   "sha256": "dc847a194ad93bacf07c2f0deedec3e93dcdb968e93602947f7e8488aecd0933",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    6746678,
+    2411304
+   ]
+  },
+  {
+   "path": "main/iw_25.iwd",
+   "size": 21479932,
+   "sha256": "58c8219eefe5fe27389ec194e15f915cdd9a9be627b24a1b4edc07e74e25927c",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    1602812,
+    5066281,
+    1951108
+   ]
+  },
+  {
+   "path": "main/iw_36.iwd",
+   "size": 440370,
+   "sha256": "004c183ef4d152cb4522299631828aa8d6152cf83e2741b0dc4911247078aa5f",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    265046
+   ]
+  },
+  {
+   "path": "main/iw_38.iwd",
+   "size": 22090,
+   "sha256": "1c968b6beee2f6de3ab351d5e689704803278fa01db9e4335535ee6d9faac209",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    151
+   ]
+  },
+  {
+   "path": "main/iw_frontend.iwd",
+   "size": 1337,
+   "sha256": "c253a6bdb2097e83fc48645e79adfe90ab91e740ae21d394304ab73092a92c3d",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    207
+   ]
+  },
+  {
+   "path": "main/localized_English_iw00.iwd",
+   "size": 2316892,
+   "sha256": "6c119ebcd88e56c0f37766816c3feb51331fea8d95261f4efde285073f7423b9",
+   "kind": "iwd",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    1049921
+   ]
+  },
+  {
+   "path": "main/playlists_sp.info",
+   "size": 1142,
+   "sha256": "2d9ee37635ff46d791f90ca7a75324458630e7dbbe7e48b7299a79a2e8cdbd8c",
+   "kind": "loose",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    457
+   ]
+  },
+  {
+   "path": "web/shaders/shaders-wgsl.pack",
+   "size": 50568987,
+   "sha256": "efb804b58ce3ebe90823e01eafe4fd02fec30879978245622cbd5b38a1874f7a",
+   "kind": "shader",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    6694981,
+    7565728,
+    7564982,
+    7590643,
+    7584987,
+    7612748,
+    233952
+   ]
+  },
+  {
+   "path": "web/shaders/shaders.pack",
+   "size": 21509807,
+   "sha256": "33d482c220a848311daeacbb52d58c4bd2daffae028342e92ada85224902ad18",
+   "kind": "shader",
+   "priority": "lazy",
+   "class": "boot",
+   "br": [
+    6497485,
+    7314243,
+    4242283
+   ]
+  },
+  {
+   "path": "web/sound/sounds.pack",
+   "size": 264725770,
+   "sha256": "68f99eb60263072edc8aace95f3686897f63d5a62579dfd03b23ec573e498114",
+   "kind": "loaded-sound",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    7602987,
+    8089730,
+    8137143
+   ],
+   "fallback": {
+    "size": 70155482,
+    "sha256": "08b8a6d85723cbfca5cb40609ffee228b8c4f1e0a5328818cccaa533f53f8afb",
+    "br": [
+     5503531,
+     5586404,
+     5409605,
+     5164469,
+     5719281,
+     5291944,
+     5502835,
+     5416386,
+     1984321
+    ]
+   },
+   "opus": 25116016
+  },
+  {
+   "path": "zone/Common/code_post_gfx.ff",
+   "size": 2248000,
+   "sha256": "d47945f6290e930c6b2db6801e7f87412f2f63fd6ab4e9dc1a3b28b1994a98e9",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/code_post_gfx_mp.ff",
+   "size": 3840169,
+   "sha256": "d920e55b34229bcaa02f12aee7ec74c35e36fe77d6174830a41b6ddc5a2709ba",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    526488
+   ]
+  },
+  {
+   "path": "zone/Common/code_pre_gfx_mp.ff",
+   "size": 150120,
+   "sha256": "0c29196aa8d6bacdef3657f6d726edc7eb82c574208ca673ebc3d4338461b4c4",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    23658
+   ]
+  },
+  {
+   "path": "zone/Common/common_zombie.ff",
+   "size": 51325344,
+   "sha256": "f812069ef2ff446b97051e75d6a5ee49687a8085218b8f79dc2d8237e543117e",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/common_zombie_patch.ff",
+   "size": 784000,
+   "sha256": "3311182f5cb9af07d69d628b8223ab43e47992e4951b46e761d4f0152f33787e",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/patch.ff",
+   "size": 1530048,
+   "sha256": "38009ffa802bcd177429c67d7774630bb1a8a7b7aea08842e8bc914996cfcb81",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/Common/patch_mp.ff",
+   "size": 10949515,
+   "sha256": "399b9c0b098573bb4af9a23ac148204c8e0dbb9feed41b80d28f3602c852df6b",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    558163,
+    176460
+   ]
+  },
+  {
+   "path": "zone/Common/zombie_theater.ff",
+   "local_parts": true,
+   "size": 111197388,
+   "sha256": "2c6d58060d94a8edc5ca62c54d456dbcaea784edd6b060f81fc87fd427914200",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    2507862,
+    2343136,
+    2220009,
+    1692818,
+    376935,
+    711706,
+    2857536,
+    1643518,
+    1738812,
+    3186720,
+    2808004,
+    4458670,
+    4803534,
+    664993
+   ]
+  },
+  {
+   "path": "zone/Common/zombie_theater_patch.ff",
+   "size": 799795,
+   "sha256": "9913ee8a177743e546af2961110ac26361643bef2892dd3b9b9473fc22ea15ea",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    139361
+   ]
+  },
+  {
+   "path": "zone/english/en_code_post_gfx.ff",
+   "size": 137472,
+   "sha256": "dec77107563c51f682722328cb073126510e856362960039dc47a74a19d9a731",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_code_post_gfx_mp.ff",
+   "size": 156224,
+   "sha256": "059f032d3a58f51cb6ec758f95332103daefb0702c193214a46750fbbd7082a9",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_code_pre_gfx_mp.ff",
+   "size": 2016,
+   "sha256": "1e20d7e71ea7ae8ec0b5f17344264fdcd97c84319fbcedf7f487ef669d034b8e",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_common_zombie.ff",
+   "size": 122944,
+   "sha256": "bf5fb5180b8180823e9a2945e5b81caf7aa1c5750686b95ae24302b53cdc79b1",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot",
+   "br": [
+    8216
+   ]
+  },
+  {
+   "path": "zone/english/en_patch.ff",
+   "size": 8704,
+   "sha256": "e3dfe0900ad726c94914eca59fd24b29ba808905b5d3d59e7172db38a4844498",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_patch_mp.ff",
+   "size": 7776,
+   "sha256": "3fed41f7d2451e455363ec992705b9f469cce74e2e06e10a9da18ad16de14edc",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "zone/english/en_zombie_theater.ff",
+   "size": 778176,
+   "sha256": "d26cbc49349ff971ca12cb8cace8cc147bd64564974ece106d6ce08ae4e75756",
+   "kind": "zone",
+   "priority": "boot",
+   "class": "boot"
+  },
+  {
+   "path": "main/iw_15.iwd",
+   "size": 894640,
+   "sha256": "ebcb2a8b4a226333540fae6b95d833ff94d3fe9cb71772c093e98e19144c15b8",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    281001
+   ],
+   "fallback": {
+    "size": 894640,
+    "sha256": "410967cd0fb8f658dcb12383f584858bd098dac864db3e0f5731eda706497bb4",
+    "br": [
+     574454
+    ]
+   },
+   "opus": 320322
+  },
+  {
+   "path": "main/iw_16.iwd",
+   "size": 3907498,
+   "sha256": "257661f75f856daf521280fb73f09685b264b7a547dcf5b8188e6f01d316dacd",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    1138647
+   ],
+   "fallback": {
+    "size": 3907498,
+    "sha256": "1c9131e84e1470773de7685a1cb3b521176473a70ae655c5b6e495ea0f9738e3",
+    "br": [
+     2675577
+    ]
+   },
+   "opus": 1224409
+  },
+  {
+   "path": "main/iw_17.iwd",
+   "size": 6414726,
+   "sha256": "132c977464210f82073115dd51c2d2b705adf3c79859a607ebb327243e6fecc2",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    1512460
+   ],
+   "fallback": {
+    "size": 6414726,
+    "sha256": "180e1b073a54447b09984b050cabcc652a3e19c59699b8c26c1f77114c88b50b",
+    "br": [
+     3884645
+    ]
+   },
+   "opus": 1572624
+  },
+  {
+   "path": "main/iw_19.iwd",
+   "size": 10731898,
+   "sha256": "5848ee75916172a745b689ead23ff67a23e0fea56b9133e59054115630be6e7a",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    3505831
+   ],
+   "fallback": {
+    "size": 10731898,
+    "sha256": "841c3abb7d905749e9f5e2a40f8e5439f50ec898379659276fe8916fcc7ca71f",
+    "br": [
+     5351485,
+     1797759
+    ]
+   },
+   "opus": 3530193
+  },
+  {
+   "path": "main/iw_22.iwd",
+   "size": 29211156,
+   "sha256": "168efa5623364083b9615f03c2ee76a758054eb794525ab25d40c3f7e82c0567",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    8245406,
+    2714233
+   ],
+   "fallback": {
+    "size": 29211156,
+    "sha256": "de10f042fba4a12d49196894c8951a9fdd24c0d5d3c44192a25fb68274ff2235",
+    "br": [
+     6211586,
+     6815791,
+     6355230,
+     2946445
+    ]
+   },
+   "opus": 11287042
+  },
+  {
+   "path": "main/iw_23.iwd",
+   "size": 10870794,
+   "sha256": "13240e696ba8c7efcead96302460da5e5bb89c423a582a8e4a5f128b5938f729",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    3306617
+   ],
+   "fallback": {
+    "size": 10870794,
+    "sha256": "5def42bd3d77d3e889ff10fb760c2f7641783d37db92e6e52c63143e0d7a1c07",
+    "br": [
+     5517519,
+     1422064
+    ]
+   },
+   "opus": 3427707
+  },
+  {
+   "path": "main/iw_24.iwd",
+   "size": 599818,
+   "sha256": "850b20fd860ebda0771665434fee671f1da91e740507e41fafce01fec3792ab9",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    132282
+   ],
+   "fallback": {
+    "size": 599818,
+    "sha256": "733b00f42340a4a36418675c9fb029c1b158f0ee5b10187928dcc4291f6a518c",
+    "br": [
+     232484
+    ]
+   },
+   "opus": 269835
+  },
+  {
+   "path": "main/localized_English_iw01.iwd",
+   "size": 11711070,
+   "sha256": "4c6db5b6ea8f2533ad99529004e3bd34a6837cb9c7e7de2d4443bca7139ed930",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    2795730
+   ],
+   "fallback": {
+    "size": 11711070,
+    "sha256": "90a4e07e04b9386e758f0ba6249a5983b0abb336b8a194b2f9955f20dbc7a1c4",
+    "br": [
+     5678237,
+     2255495
+    ]
+   },
+   "opus": 3742112
+  },
+  {
+   "path": "main/localized_English_iw04.iwd",
+   "size": 11529138,
+   "sha256": "aba21bd3eed0134b1c04ccc2ef5169c550e0bce04ff15cf00e88cec38d0680e4",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    2471978
+   ],
+   "fallback": {
+    "size": 11529138,
+    "sha256": "77c3852c4aa3f452dd048c01d7b1ddada31bc495982b519191e895b773b58287",
+    "br": [
+     5534196,
+     1889544
+    ]
+   },
+   "opus": 2558351
+  },
+  {
+   "path": "main/localized_English_iw05.iwd",
+   "size": 90568368,
+   "sha256": "e20e40920b93a5a690f054e52f467ea70ea49394aaf0c48a48bee2b7e1cd9916",
+   "kind": "iwd",
+   "priority": "background",
+   "class": "background",
+   "br": [
+    7068742,
+    7412587,
+    7442784,
+    1302583
+   ],
+   "fallback": {
+    "size": 90568368,
+    "sha256": "3d61b1a229009ea3a410e8b161ef362f7aeaf3e5c482a7632d3983ddf4b37a53",
+    "br": [
+     6359690,
+     6383063,
+     6413332,
+     6259474,
+     6370935,
+     6267085,
+     6144795,
+     6200793,
+     6198897,
+     6175586,
+     4846490
+    ]
+   },
+   "opus": 26737083
+  }
+ ],
+ "streams": [
+  {
+   "path": "web/video/zombie_theater_load.av1.webm",
+   "size": 1709400,
+   "sha256": "e6605fab34c07d1a44d6a460e358f49ebc831106853f10c8dd92d5aa4d044515",
+   "kind": "video",
+   "name": "zombie_theater_load",
+   "width": 854,
+   "height": 480,
+   "frames": 900,
+   "fps_num": 2997,
+   "fps_den": 100,
+   "mime": "video/webm; codecs=\"av01.0.04M.08, opus\"",
+   "priority": "stream",
+   "class": "stream"
+  },
+  {
+   "path": "web/video/zombie_theater_load.webm",
+   "size": 3032466,
+   "sha256": "88c1519de993de137d01226ebc2f20591699c16557946eddb4736536f8c9a663",
+   "kind": "video",
+   "name": "zombie_theater_load",
+   "width": 854,
+   "height": 480,
+   "frames": 900,
+   "fps_num": 2997,
+   "fps_den": 100,
+   "mime": "video/webm; codecs=\"vp9, opus\"",
+   "priority": "stream",
+   "class": "stream"
+  }
+ ],
+ "variant": "original+size3",
+ "transport": {
+  "encoding": "br",
+  "chunk": 8388608
+ }
+}
